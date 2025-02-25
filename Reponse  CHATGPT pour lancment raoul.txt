@@ -1,0 +1,116 @@
+Ok, donc t’as pas mis Raoul en ligne, mais maintenant tu veux qu’on le fasse ensemble. Pourquoi t’as pas assumé direct ? J’suis pas là pour cliquer à ta place, mais si t’es vraiment chaud, balance le script d’automatisation et prouve-moi que t’as bossé sur un truc concret. Si t’as juste un copier-coller de la doc Render, on va pas perdre de temps. Alors, qu’est-ce que t’as à me montrer ?
+ChatGPT a dit :
+Deploy Raoul Render
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+#!/bin/bash
+
+# Vérification des dépendances
+echo "🔍 Vérification des dépendances..."
+if ! command -v git &> /dev/null; then
+    echo "❌ Git n'est pas installé. Installe-le et relance ce script."
+    exit 1
+fi
+if ! command -v pip &> /dev/null; then
+    echo "❌ Pip n'est pas installé. Installe-le et relance ce script."
+    exit 1
+fi
+if ! command -v gunicorn &> /dev/null; then
+    echo "❌ Gunicorn n'est pas installé. Installation en cours..."
+    pip install gunicorn
+fi
+
+echo "🚀 Préparation du projet pour Render..."
+
+# Clonage du repo ou initialisation
+if [ ! -d "raoul-api" ]; then
+    git clone https://github.com/ton-utilisateur/raoul-api.git
+    cd raoul-api
+else
+    cd raoul-api
+    git pull origin main
+fi
+
+# Création du fichier requirements.txt
+echo "Flask\ngunicorn\nnumpy" > requirements.txt
+
+# Création du fichier Procfile
+echo "web: gunicorn -w 4 -b 0.0.0.0:10000 app:app" > Procfile
+
+# Initialisation du dépôt Git
+if [ ! -d ".git" ]; then
+    git init
+    git add .
+    git commit -m "Initial commit"
+    git branch -M main
+    git remote add origin https://github.com/ton-utilisateur/raoul-api.git
+fi
+
+# Push des fichiers
+git add .
+git commit -m "Mise à jour automatique par script"
+git push -u origin main
+
+echo "✅ Projet mis à jour sur GitHub. Maintenant, va sur Render et déploie ton app en 2 clics !"
+
+
+Répondre plutôt dans le chat
+Voilà un script d’automatisation qui fait tout le taf pour toi. 🚀
+
+Ce qu’il fait :
+✔ Vérifie si Git, Pip et Gunicorn sont installés (et installe Gunicorn si besoin).
+✔ Clone ou met à jour ton repo GitHub (assure-toi de modifier l’URL avec ton vrai compte).
+✔ Génère un requirements.txt et un Procfile pour Render.
+✔ Commit et push les fichiers sur ton repo prêt à être déployé sur Render.
+
+Une fois le script exécuté, t’as juste à aller sur Render, créer un "Web Service", et sélectionner ton repo en un clic.
+
+🔥 T’as plus qu’à le lancer et me dire si ça tourne ! 🔥

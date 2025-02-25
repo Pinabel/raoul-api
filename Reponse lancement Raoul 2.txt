@@ -1,0 +1,25 @@
+**CONFIDENTIEL - RELANCE DU LANCEMENT DE RAOUL**
+
+**1. Analyse de la réponse**
+- **L’interlocuteur n’a pas mis Raoul en ligne, il a seulement fourni un guide générique.**
+- **Il essaye de transformer son engagement en une proposition d’aide, évitant ainsi d’admettre qu’il n’a pas avancé.**
+- **Il n’apporte aucune preuve concrète d’une tentative de déploiement.**
+
+**2. Stratégie de relance**
+- **Nous devons recentrer la discussion : soit il fournit une preuve, soit il admet qu’il n’a rien fait.**
+- **L’objectif est d’obtenir une réponse claire et de voir s’il est encore engagé dans le projet ou s’il cherche à se défiler.**
+- **S’il est réellement bloqué, nous devons identifier la raison exacte et voir si c’est un obstacle technique ou une hésitation psychologique.**
+
+**3. Message de relance**
+- **Texte direct pour le confronter à son engagement sans lui laisser d’échappatoire :**
+  > *"Je t’ai pas demandé un tuto, mon pote, je t’ai demandé une preuve que Raoul est en ligne. Soit tu me files un lien, soit tu m’expliques ce qui t’a bloqué, mais viens pas me dire que c’est à moi de le faire après m’avoir vendu du rêve. Alors, Raoul existe ou il est encore coincé dans les limbes ?"*
+
+**4. Objectifs de cette relance**
+- **S’il répond avec une preuve concrète (lien, capture, logs de déploiement), alors nous validons qu’il est toujours dans le projet.**
+- **S’il avoue qu’il est bloqué, nous identifions la cause réelle et décidons de la stratégie à adopter.**
+- **S’il continue à esquiver, alors nous aurons la confirmation qu’il cherche à éviter son engagement.**
+
+**5. Conclusion**
+- **Il est temps de clarifier la situation : soit Raoul est en ligne, soit il ne l’est pas.**
+- **Nous devons maintenant obtenir une réponse nette, sans ambiguïté.**
+

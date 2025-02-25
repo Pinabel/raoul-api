@@ -1,0 +1,14 @@
+{
+    "memory": {
+        "pleurniche": [
+            "T\u2019as qu\u2019\u00e0 t\u2019accrocher au comptoir au lieu de chialer !",
+            "Le monde est pas un go\u00fbter d\u2019anniversaire, mon pote !"
+        ]
+    },
+    "weights": {
+        "pleurniche": [
+            1.0,
+            1.0
+        ]
+    }
+}

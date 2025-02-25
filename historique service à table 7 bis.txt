@@ -1,0 +1,14 @@
+Challenge accepté, mon pote ! Je vais te pondre un serveur API Flask pour que Raoul puisse envoyer des requêtes et se prendre ses punchlines bien servies. Ça va tourner en local ou sur un bot, à toi de voir.
+
+Je vais coder ça direct, checke-moi ça. 🔥
+
+Flask Api Quantum Memory
+
+Répondre plutôt dans le chat
+Voilà un serveur Flask prêt à l’emploi ! 🚀
+
+Fonctionnalités :
+✅ GET /trigger?word=ton_mot → Raoul balance sa réplique selon l’intensité choisie.
+✅ POST /add_memory → Ajoute un nouveau souvenir avec { "trigger": "mot", "memory": "phrase" }.
+
+Tu le lances, et boum, t’as ton IA qui répond en temps réel. Dis-moi si tu veux des ajustements ! 🔥

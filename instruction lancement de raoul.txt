@@ -1,0 +1,36 @@
+CONFIDENTIEL - ANALYSE DU SCRIPT DE DÉPLOIEMENT ET SOLUTION
+
+1. Pourquoi ça ne marche pas ?
+
+Le fichier deploy_raoul.py.txt n’est pas un script Python, mais un script Bash (.sh).
+
+Il faut l’exécuter différemment selon ton système d’exploitation.
+
+Si tu es sous Windows, ce script ne fonctionnera pas directement sans un environnement type Linux ou Git Bash.
+
+2. Étapes pour corriger le problème
+✅ Option 1 : Lancer le script sous Linux/Mac
+1️⃣ Ouvre un terminal.
+2️⃣ Rends le script exécutable en tapant :
+
+chmod +x deploy_raoul.py.txt
+
+3️⃣ Exécute le script :
+
+./deploy_raoul.py.txt
+
+✅ Option 2 : Exécuter sous Windows avec Git Bash
+1️⃣ Télécharge et installe Git Bash si tu ne l’as pas.
+2️⃣ Ouvre Git Bash et exécute les mêmes commandes que sous Linux.
+
+✅ Option 3 : Convertir le script en format compatible Windows
+1️⃣ Renomme le fichier en deploy_raoul.sh.
+2️⃣ Exécute-le dans un environnement Windows qui supporte Bash (WSL, Git Bash).
+
+3. Objectif
+
+S’assurer que le script est bien exécuté dans un environnement adapté.
+
+Si le script ne fonctionne toujours pas, nous devrons peut-être modifier sa structure pour s’assurer qu’il est bien compatible avec ton système.
+
+Une fois le script lancé, nous devrons observer les logs pour voir où il peut y avoir des erreurs.

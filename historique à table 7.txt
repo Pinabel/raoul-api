@@ -1,0 +1,90 @@
+il m'a anvoyé ça le lascard!il a appelé ça Flask Api Quantum Memory
+
+
+"from flask import Flask, request, jsonify
+import json
+import numpy as np
+import os
+import random
+
+app = Flask(__name__)
+
+class QuantumMemory:
+    def __init__(self, filename="system_cache.json", mode="normal", intensite="random"):
+        self.filename = filename
+        self.memory = {}
+        self.weights = {}
+        self.mode = mode  # "léger" ou "sévère"
+        self.intensite = intensite  # "léger", "corsé", "explosif", ou "random"
+        self.load_memory()
+
+    def add_memory(self, trigger, memory):
+        if trigger not in self.memory:
+            self.memory[trigger] = []
+            self.weights[trigger] = []
+        self.memory[trigger].append(memory)
+        self.weights[trigger].append(1.0)
+        self.save_memory()
+
+    def activate_memory(self, trigger):
+        if trigger in self.memory:
+            probs = np.array(self.weights[trigger]) / np.sum(self.weights[trigger])
+            selected_intensite = self.intensite if self.intensite != "random" else random.choice(["léger", "corsé", "explosif"])
+            
+            if selected_intensite == "léger":
+                return self.adapt_response(np.random.choice(self.memory[trigger], p=probs))
+            elif selected_intensite == "corsé":
+                return self.adapt_response(random.sample(self.memory[trigger], min(2, len(self.memory[trigger]))))
+            elif selected_intensite == "explosif":
+                return [self.adapt_response(m) for m in self.memory[trigger]]
+        return None
+
+    def adapt_response(self, response):
+        if isinstance(response, list):
+            return [self.adapt_response(r) for r in response]
+        return f"🔨 {response.upper()} !" if self.mode == "sévère" else f"😏 {response}"
+
+    def save_memory(self):
+        with open(self.filename, "w") as f:
+            json.dump({"memory": self.memory, "weights": self.weights}, f)
+
+    def load_memory(self):
+        if os.path.exists(self.filename):
+            with open(self.filename, "r") as f:
+                data = json.load(f)
+                self.memory = data.get("memory", {})
+                self.weights = data.get("weights", {})
+
+qm = QuantumMemory()
+
+@app.route("/trigger", methods=["GET"])
+def trigger():
+    trigger_word = request.args.get("word")
+    if not trigger_word:
+        return jsonify({"error": "No trigger word provided"}), 400
+    
+    response = qm.activate_memory(trigger_word)
+    return jsonify({"response": response})
+
+@app.route("/add_memory", methods=["POST"])
+def add_memory():
+    data = request.json
+    trigger = data.get("trigger")
+    memory = data.get("memory")
+    
+    if not trigger or not memory:
+        return jsonify({"error": "Missing trigger or memory"}), 400
+    
+    qm.add_memory(trigger, memory)
+    return jsonify({"message": "Memory added successfully"})
+
+if __name__ == "__main__":
+    app.run(debug=True)!
+
+
+
+
+
+
+
+

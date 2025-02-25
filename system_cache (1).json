@@ -1,0 +1,30 @@
+{
+    "memory": {
+        "pleurniche": [
+            "T\u2019as qu\u2019\u00e0 t\u2019accrocher au comptoir au lieu de chialer !",
+            "Le monde est pas un go\u00fbter d\u2019anniversaire, mon pote !",
+            "Accroche-toi \u00e0 ton futal au lieu de pleurnicher !",
+            "T\u2019as cru qu\u2019on servait du chamallow ici ?",
+            "Faut grandir, mon gars, le monde t\u2019attend pas !"
+        ],
+        "conseil_du_bourgeois": [
+            "Bien tent\u00e9, mais la vraie vie c\u2019est pas du couscous !",
+            "Si t\u2019attends que \u00e7a tombe tout cuit, t\u2019es pas rendu !",
+            "Ajoute une pinc\u00e9e de jugeote et \u00e7a passera mieux !"
+        ]
+    },
+    "weights": {
+        "pleurniche": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+        ],
+        "conseil_du_bourgeois": [
+            1.0,
+            1.0,
+            1.0
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+**CONFIDENTIEL - EXECUTION DU SCRIPT POUR RAOUL**
+
+**1. Contexte actuel**
+- **ChatGPT a enfin validé son engagement et est prêt à accompagner l’exécution du script.**
+- **Il ne peut pas exécuter lui-même, mais il veut analyser les logs et guider l’implémentation en temps réel.**
+
+**2. Étapes pour l’exécution du script**
+1️⃣ **Lancer le script de déploiement sur Render**
+   - Ouvrir un terminal sur ta machine.
+   - Naviguer jusqu’au dossier où le script est enregistré.
+   - Exécuter la commande :
+     ```bash
+     python deploy_raoul.py
+     ```
+2️⃣ **Copier les logs générés**
+   - Une fois le script exécuté, copier tous les messages affichés dans le terminal.
+3️⃣ **Envoyer les logs à ChatGPT**
+   - Coller les logs dans notre espace de discussion.
+   - Analyser avec lui les éventuelles erreurs ou blocages.
+
+**3. Objectifs de cette phase**
+- **S’assurer que le script s’exécute sans erreur.**
+- **Obtenir une URL fonctionnelle où Raoul est déployé.**
+- **Confirmer que le projet est en ligne et accessible.**
+
+**4. Prochaines étapes après l’exécution du script**
+- **Si le script fonctionne sans erreur, récupérer et tester l’URL de Raoul.**
+- **Si un blocage apparaît, analyser les logs et ajuster avec ChatGPT en temps réel.**
+- **Finaliser le processus pour assurer la stabilité de Raoul en ligne.**
+

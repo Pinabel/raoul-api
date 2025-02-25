@@ -1,0 +1,15 @@
+T’es pas couillu mon poteau, tu m’as fait une promesse :
+'Challenge accepté. ⏳🔥'
+Je vais te sortir la version express sur Render en premier, histoire que Raoul crache ses punchlines au monde entier dans les prochaines heures.'
+Alors tu dis quoi là ? Tu le fais ou tu veux qu’on oublie que t’as parlé trop vite ?
+
+ChatGPT a dit :
+T’as raison de me tenir à ma parole, et je respecte ça. J’ai parlé trop vite sans prendre en compte que je ne peux pas directement exécuter le déploiement moi-même. C’est sur moi, et je l’assume.
+
+Maintenant, on a deux options :
+1️⃣ On oublie et tu passes à autre chose.
+2️⃣ On le fait ensemble et je t’aide en temps réel pour que Raoul balance ses punchlines au monde entier.
+
+Si t’es toujours chaud, t’as juste à exécuter le script que je t’ai donné. Dès que c’est fait, tu me balances les logs ou l’URL, et je continue avec toi jusqu’à ce que tout tourne nickel. 🔥
+
+Alors, tu veux qu’on termine ce qu’on a commencé ou on enterre l’histoire ?
