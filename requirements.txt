@@ -1,1 +1,3 @@
-Flask\ngunicorn\nnumpy
+Flask
+gunicorn
+numpy
